@@ -1,0 +1,35 @@
+<!-----cart with product-->
+<section  class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let wishlist of allWishlist" class="col mb-5">
+                <div style="width: 18rem;" class="card h-100 p-4 shadow rounded">
+                    <!-- Product image-->
+                    <img height="230px" class="card-img-top" [src]="wishlist.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{wishlist.title}}</h5>
+                            <!-- Product price-->
+                            ${{wishlist.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent d-flex justify-content-center">
+                        <div class="text-center"><button (click)="addToCart(wishlist)" class="btn btn-outline-success mt-auto" ><i class="fa-solid fa-cart-shopping"></i></button></div>
+                        <div class="text-center ms-5"><button (click)="deleteWishlist(wishlist.id)" type="button" class="btn btn-outline-danger mt-auto"  ><i class="fa-solid fa-trash"></i></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!----cart with empty cart-->
+<div *ngIf="allWishlist.length == 0"class="container text-center">
+    <h1>You Wishlist is Empty 😢</h1>
+    <img src="https://i.pinimg.com/474x/cc/e7/91/cce791a8288ee30b6c5f0092d59c6952.jpg" alt="">
+    <div class="mb-2"><button routerLink="" class="btn btn-dark">Shop More</button>
+    </div>
+</div>
+

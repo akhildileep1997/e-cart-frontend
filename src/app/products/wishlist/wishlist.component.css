@@ -1,0 +1,10 @@
+.card-img-top{
+    transition: 0.2s ease-in-out;
+}
+.card:hover .card-img-top{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    background-color: rgba(240, 248, 255, 0.516);
+}

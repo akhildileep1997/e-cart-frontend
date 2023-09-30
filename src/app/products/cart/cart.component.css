@@ -1,0 +1,26 @@
+.items{
+    display: flex;
+}
+.items .table{
+    width: 75%;
+}
+.items .bill{
+    width: 20%;
+    height: 300px;
+    padding: 5px;
+    background-color: rgba(255, 255, 0, 0.326);
+}
+
+.details,.price,.discount{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+}
+.offers:hover{
+    cursor: pointer;
+}

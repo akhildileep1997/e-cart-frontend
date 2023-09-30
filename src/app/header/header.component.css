@@ -1,0 +1,8 @@
+.banner{
+    background-image: url('https://image.freepik.com/free-vector/online-shopping-free-shipping-banner-template_275806-454.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+.banner{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/229/125/original/sale-banner-design-for-business-promotion-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+.card-img-top{
+    transition: 0.2s ease-in-out;
+}
+.card:hover .card-img-top{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    background-color: rgba(240, 248, 255, 0.516);
+}
+.card:hover .btn{
+    background-color: black;
+    color: white;
+}
